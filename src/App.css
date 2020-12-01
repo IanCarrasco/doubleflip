@@ -1,38 +1,75 @@
+@font-face{
+  src: url('./AtlasGrotesk-Regular.ttf');
+  font-family: 'AtlasG';
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #000;
+  width: 100vw;
+  height:100vh;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  font-family: 'AtlasG';
 }
-
-.App-link {
-  color: #61dafb;
+.image-container{
+  width: 27vw;
+  height: 40vh;
+  object-fit:contain;
+  padding: 5px;
 }
+.upload-box{
+  width:200px;
+  height: 200px;
+  align-self: center;
+}
+.fileContainer{
+  background-color: #222;
+  padding:5px;
+  text-align: center;
+}
+.header{
+  width: 100vw;
+  height: 125px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color:#fff;
+  font-family: 'AtlasG';
+}
+.gallery {
+  display: flex;
+  align-self: center;
+  flex-direction: row !important;
+}
+.gallery > img {
+  max-width: 35vw;
+}
+.gallery > div{
+  display: flex;
+  flex-direction: column;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.gallery > div > button {
+  width: 200px;
+  flex-grow: 0;
+  align-self: center;
+  margin: 15px;
+  height: 50px;
+  outline: none;
+  border-radius: 50px;
+  border: 0px;
+  background-color: rgb(56, 91, 207);
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.gallery > div > button:hover {
+  background-color: rgb(72, 114, 255);
 }
