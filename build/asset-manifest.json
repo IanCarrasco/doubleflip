@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ebc805c4.chunk.css",
+    "main.js": "/static/js/main.8c9f705e.chunk.js",
+    "main.js.map": "/static/js/main.8c9f705e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9bd6b4da.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9bd6b4da.js.map",
+    "static/css/2.86e65bd8.chunk.css": "/static/css/2.86e65bd8.chunk.css",
+    "static/js/2.384ee057.chunk.js": "/static/js/2.384ee057.chunk.js",
+    "static/js/2.384ee057.chunk.js.map": "/static/js/2.384ee057.chunk.js.map",
+    "static/js/3.5ad56412.chunk.js": "/static/js/3.5ad56412.chunk.js",
+    "static/js/3.5ad56412.chunk.js.map": "/static/js/3.5ad56412.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.86e65bd8.chunk.css.map": "/static/css/2.86e65bd8.chunk.css.map",
+    "static/css/main.ebc805c4.chunk.css.map": "/static/css/main.ebc805c4.chunk.css.map",
+    "static/js/2.384ee057.chunk.js.LICENSE.txt": "/static/js/2.384ee057.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/AtlasGrotesk-Regular.ca730a1e.ttf",
+    "static/media/UploadIcon.svg": "/static/media/UploadIcon.469126df.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bd6b4da.js",
+    "static/css/2.86e65bd8.chunk.css",
+    "static/js/2.384ee057.chunk.js",
+    "static/css/main.ebc805c4.chunk.css",
+    "static/js/main.8c9f705e.chunk.js"
+  ]
+}
