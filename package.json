@@ -1,7 +1,6 @@
 {
   "name": "doubleflip",
   "version": "0.1.0",
-  "homepage": "iancarras.co/doubleflip",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
