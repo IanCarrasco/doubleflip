@@ -1,0 +1,43 @@
+@font-face{
+    src:url('./assets/SFHeavy.ttf');
+    font-family: "SFHeavy";
+}
+@font-face{
+    src:url('./assets/SFRegular.ttf');
+    font-family: "SFRegular";
+}
+.hero-text{
+    color:#fff;
+    font-family:"SFHeavy";
+    margin-bottom: 0;
+}
+.hero-subtext{
+    color: #555;
+    font-family:"SFRegular";
+    font-size: 1.3rem;
+}
+.enter-button{
+    outline: none;
+    width: 10vw;
+    border:0px;
+    border-radius: 5px;
+    background-color: rgb(42, 101, 190);
+    height: 50px;
+    color:#fff;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.enter-button:hover{
+    background-color: rgb(55, 124, 228);
+    cursor: pointer;
+}
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    width:100vw;
+    font-size: 2rem;
+    font-family:"SFRegular";
+}

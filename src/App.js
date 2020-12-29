@@ -1,5 +1,7 @@
 import React, {useRef, useState, useEffect} from "react";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import ImageUploader from "react-images-upload";
+import Home from './Home.js'
 import './App.css'
 
 const doubleFlip = (im, mode) => {
@@ -64,40 +66,44 @@ const App = props => {
   };
 
   return (
-    <>
-    <div className="header">
-      <h1>DoubleFlip</h1>
-    </div>
-    <div className="App">
-      <div className="gallery">
-        <div>
-          <img ref={imgRefM1} className="image-container"></img>
-          { !downloadHidden &&
-            <button onClick={() => download(imgRefM1)}>Download Image</button>
-          }
+    <Router>
+    <Switch>
+      <Route exact path="/">
+        <Home/>
+      </Route>
+      <Route path="/display">
+        <div className="App">
+          <div className="gallery">
+            <div>
+              <img ref={imgRefM1} className="image-container"></img>
+              { !downloadHidden &&
+                <button onClick={() => download(imgRefM1)}>Download Image</button>
+              }
+            </div>
+            <div>
+              <img ref={imgRefOrig} className="image-container"></img>
+            </div>
+            <div>
+              <img ref={imgRefM2} className="image-container"></img>
+              { !downloadHidden &&
+                <button onClick={() => download(imgRefM2)}>Download Image</button>
+              }
+            </div>
+          </div>
+          <ImageUploader
+              {...props}
+              withIcon={true}
+              onChange={onDrop}
+              label="Select an Image to DoubleFlip"
+              buttonText="Open"
+              imgExtension={[".jpg",".jpeg",".gif", ".png", ".gif"]}
+              maxFileSize={5242880}
+              className="upload-box"
+            />
         </div>
-        <div>
-          <img ref={imgRefOrig} className="image-container"></img>
-        </div>
-        <div>
-          <img ref={imgRefM2} className="image-container"></img>
-          { !downloadHidden &&
-            <button onClick={() => download(imgRefM2)}>Download Image</button>
-          }
-        </div>
-      </div>
-      <ImageUploader
-          {...props}
-          withIcon={true}
-          onChange={onDrop}
-          label="Select an Image to DoubleFlip"
-          buttonText="Open"
-          imgExtension={[".jpg",".jpeg",".gif", ".png", ".gif"]}
-          maxFileSize={5242880}
-          className="upload-box"
-        />
-    </div>
-    </>
+      </Route>
+    </Switch>
+    </Router>
   );
 };
 
